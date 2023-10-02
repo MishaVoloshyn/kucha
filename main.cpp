@@ -38,7 +38,7 @@ Kucha<T>::Kucha(T amount)
 	Count = amount;
 }
 template<class T>
-Kucha<T>::~Queue()
+Kucha<T>::~Kucha()
 {
 	DelAll();
 }
@@ -58,12 +58,12 @@ void Kucha<T>::Del(int adress)
 {
 	if (adress == 0)
 	{
-		cout << "Input position: ";
+		cout << "Input Adress: ";
 		cin >> adress;
 	}
 	if (adress < 1 || adress > Count)
 	{
-		cout << "Incorrect position !!!\n";
+		cout << "Error Adress" << endl;
 		return;
 	}
 	int i = 1;
